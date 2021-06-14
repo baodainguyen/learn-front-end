@@ -1,0 +1,17 @@
+@use '../custom' as *;
+// GRADIENT MIXIN
+@mixin gradientBg {
+    background: linear-gradient(to right, rgba($primary, 0.9), rgba($secondary, 0.9));
+}
+
+@mixin poppinFont {
+    font-family: 'Poppins', sans-serif;
+}
+
+// ABSOLUTE CENTER
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

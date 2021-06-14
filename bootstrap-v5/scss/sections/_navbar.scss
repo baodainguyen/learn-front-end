@@ -1,0 +1,19 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu {
+    @include gradientBg;
+
+    li {
+        padding: 0 0.7rem;
+
+        a { 
+            color: $white !important; 
+            font-weight: 600;
+        }
+    }
+
+    strong.dnb-logo { 
+        color: $white !important;
+    }
+}

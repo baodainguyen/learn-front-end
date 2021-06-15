@@ -3,11 +3,11 @@
 
 .intro-section {
     @include gradientBg;
-    padding: 3.3rem 0 1.1rem 0;
+    padding: 3rem 0 0 0;
 }
 
 .intros {
-
+    margin-top: 1rem;
     .video-box {
         position: relative;
 

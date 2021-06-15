@@ -2,8 +2,6 @@
 @use '../components/mixins' as *;
 
 .display-2 {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
     @include poppinFont;
 
     &--intro {
@@ -18,5 +16,27 @@
         color: $white;
         margin-top: 1rem;
         text-transform: none;
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.5rem;
+            display: inline-block;
+        }
     }
+}
+
+.heading-line::before {
+    content: "";
+    width: 10rem; height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+.heading-line::after {
+    content: "";
+    padding-top: 0.5rem;
+    width: 2rem; height: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    background-color: $primary;
 }

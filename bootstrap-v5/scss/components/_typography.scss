@@ -37,6 +37,14 @@
     width: 2rem; height: 0.2rem;
     display: block;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     background-color: $primary;
+}
+
+.display-3 {
+    @include poppinFont;
+}
+.border-right {
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
 }

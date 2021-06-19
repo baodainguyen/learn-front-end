@@ -11718,8 +11718,17 @@ textarea.form-control-lg {
   height: 0.2rem;
   display: block;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   background-color: #9926f0;
+}
+
+.display-3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.border-right {
+  border-right: 0.1rem solid #dee2e6;
+  height: 100%;
 }
 
 .menu {
@@ -11779,6 +11788,9 @@ textarea.form-control-lg {
 }
 .companies__logo-box img {
   height: 100%;
+}
+.companies__logo-box img:hover {
+  filter: grayscale(120);
 }
 
 /*# sourceMappingURL=style.css.map */

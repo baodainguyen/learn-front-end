@@ -3,7 +3,7 @@ const app = new Vue({
   el: '#dnbApp',
   data: {
     ParentRegion: [],
-    LoadIndex: 5
+    LoadIndex: 8
   },
   computed: {
     MinMaxDate() {
@@ -51,17 +51,34 @@ const app = new Vue({
     ElementMultiLines() {
       var parentRegion = JSON.parse(JSON.stringify(this.$root.ParentRegion));
       var loadIndex = this.LoadIndex;
+      var parentIdx = parentRegion.length;
      
 
-      parentRegion.filter((pr) => {
-
-        pr.ChildStakeHolders = pr.ChildStakeHolders.filter((cs, csIndex) => {
+      parentRegion.filter((pr, prIdx) => {
+        let childLen = pr.ChildStakeHolders.length;
+        
+        if(loadIndex <= childLen && prIdx < parentIdx) {
+          pr.ChildStakeHolders = pr.ChildStakeHolders.filter((cs, csIndex) => {
 
             return csIndex < loadIndex;
 
           });
+          parentIdx = 1 + prIdx;
+          
+        }
 
-        return true;
+        if(loadIndex > childLen) {
+          loadIndex -= childLen;
+        }
+
+        if(prIdx >= parentIdx){
+          pr.ChildStakeHolders = [];
+          pr.Name = null;
+          pr = null;
+        }
+
+        return prIdx < parentIdx;
+        
       }).filter((pr, prIdx) => {
 
         pr.ChildStakeHolders.filter((cs, csIndex) => {

@@ -266,7 +266,7 @@ function getDataHardCode() {
                 },
                 {
                     Id: 'guid-or-long--ChildStakeHolders-4',
-                    Name: "Stakeholder group ccc",
+                    Name: "Stakeholder group 333",
                     PathName: "Region c33 > Market-segment ceec",
                     Categories: [
                         {
@@ -385,7 +385,7 @@ function getDataHardCode() {
                 },
                 {
                     Id: 'guid-or-long--ChildStakeHolders-5',
-                    Name: "Stakeholder group ccc",
+                    Name: "Stakeholder group eee",
                     PathName: "Region c33 > Market-segment ceec",
                     Categories: [
                         {
@@ -504,7 +504,7 @@ function getDataHardCode() {
                 },
                 {
                     Id: 'guid-or-long-ChildStakeHolders-6',
-                    Name: "Stakeholder group 1",
+                    Name: "Stakeholder group fff",
                     PathName: "Region a > Market-segment",
                     Categories: [
                         {
@@ -613,7 +613,7 @@ function getDataHardCode() {
                 },
                 {
                     Id: 'guid-or-long-ChildStakeHolders-7',
-                    Name: "Stakeholder group 11112",
+                    Name: "Stakeholder group ggg",
                     PathName: "Region abbb > Market-segment bdd",
                     Categories: [
                         {
@@ -641,10 +641,16 @@ function getDataHardCode() {
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            Id: 'guid-or-long',
+            Name: "Region b",
+            ChildStakeHolders: [
                 {
                     Id: 'guid-or-long-ChildStakeHolders-8',
-                    Name: "Stakeholder group ccc",
+                    Name: "Stakeholder group bbb",
                     PathName: "Region c33 > Market-segment ceec",
                     Categories: [
                         {
@@ -763,7 +769,7 @@ function getDataHardCode() {
                 },
                 {
                     Id: 'guid-or-long--ChildStakeHolders-9',
-                    Name: "Stakeholder group ccc",
+                    Name: "Stakeholder group bbb2",
                     PathName: "Region c33 > Market-segment ceec",
                     Categories: [
                         {
@@ -882,7 +888,7 @@ function getDataHardCode() {
                 },
                 {
                     Id: 'guid-or-long--ChildStakeHolders-0',
-                    Name: "Stakeholder group ccc",
+                    Name: "Stakeholder group bbb3",
                     PathName: "Region c33 > Market-segment ceec",
                     Categories: [
                         {

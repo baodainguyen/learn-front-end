@@ -14,9 +14,10 @@
     
     <template id="example">
         <div>
-            <div v-for="p in ParentRegion">
+            <div v-for="(p, pIdx) in ParentRegion">
                 <div>{{p.Name}}</div>
-                <div v-for="chl in p.ChildStakeHolders">
+                <div v-for="(chl, cIdx) in p.ChildStakeHolders">
+                <strong>{{cIdx}}</strong>
                     <div>{{chl.Name}}</div>
                     <div v-for="ct in chl.Categories">
                         <div>{{ct.Name}}</div>
@@ -38,13 +39,15 @@
             template: "#example",
             computed: { 
                 ParentRegion() {
-                    return this.$root.ParentRegionMultiLines;
+                    return this.$root.ElementMultiLines;
                 }
             },
             methods: { }
             }
         );
     </script>
+    <script src="data_code.js"></script>
+    <script src="dainb_common.js"></script>
     <script src="dainb_app.js"></script>
 </body>
 </html>

@@ -3,9 +3,43 @@ const app = new Vue({
   el: '#dnbApp',
   data: {
     ParentRegion: [],
-    LoadIndex: 8
+    LoadIndex: 1,
+    FromDate: "1/5/2021"
   },
   computed: {
+    Week(){
+      let fromDate = new Date(this.FromDate);
+
+      function getWeek(date){
+        
+        let fromDate = moveBackMon(date);
+        let toDate = new Date(fromDate.getTime() + 6 * 24 * 60 * 60 * 1000);
+       
+        return {
+          FromDate: fromDate,
+          ToDate: toDate,
+          Number: getNumOfWeek(toDate)
+        };
+      }
+
+      function moveBackMon(date){
+        let day = date.getDay();
+        let delta = day > 0 ? day - 1 : 6;
+        let deltaMiliS = delta * 24 * 60 * 60 * 1000;
+        let firstDinWeek = date.getTime() - deltaMiliS;
+        return new Date(firstDinWeek);
+      }
+
+      function getNumOfWeek(date){
+        let year = date.getFullYear();
+        let firstDateY = new Date(year, 0, 1);
+        let deltaTime = date.getTime() - firstDateY.getTime();
+        deltaTime = deltaTime / 24 / 60 / 60 / 1000;
+        return Math.floor(deltaTime / 7);
+      }
+
+      return getWeek(fromDate)
+    },
     MinMaxDate() {
       let minStart, maxEnd;
       this.ElementMultiLines.filter(pr => {
@@ -52,34 +86,8 @@ const app = new Vue({
       var parentRegion = JSON.parse(JSON.stringify(this.$root.ParentRegion));
       var loadIndex = this.LoadIndex;
       var parentIdx = parentRegion.length;
-     
 
-      parentRegion.filter((pr, prIdx) => {
-        let childLen = pr.ChildStakeHolders.length;
-        
-        if(loadIndex <= childLen && prIdx < parentIdx) {
-          pr.ChildStakeHolders = pr.ChildStakeHolders.filter((cs, csIndex) => {
-
-            return csIndex < loadIndex;
-
-          });
-          parentIdx = 1 + prIdx;
-          
-        }
-
-        if(loadIndex > childLen) {
-          loadIndex -= childLen;
-        }
-
-        if(prIdx >= parentIdx){
-          pr.ChildStakeHolders = [];
-          pr.Name = null;
-          pr = null;
-        }
-
-        return prIdx < parentIdx;
-        
-      }).filter((pr, prIdx) => {
+      let prt = parentRegion.filter((pr, prIdx) => {
 
         pr.ChildStakeHolders.filter((cs, csIndex) => {
 
@@ -103,8 +111,28 @@ const app = new Vue({
         })
         return true;
       });
+     
 
-      return parentRegion;
+      return prt.filter((pr, prIdx) => {
+        let childLen = pr.ChildStakeHolders.length;
+        
+        if(loadIndex <= childLen && prIdx < parentIdx) {
+          pr.ChildStakeHolders = pr.ChildStakeHolders.filter((cs, csIndex) => {
+
+            return csIndex < loadIndex;
+
+          });
+          parentIdx = 1 + prIdx;
+          
+        }
+
+        if(loadIndex > childLen) {
+          loadIndex -= childLen;
+        }
+
+        return prIdx < parentIdx;
+        
+      });
     }
   },
   mounted(){

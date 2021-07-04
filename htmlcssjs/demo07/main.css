@@ -1,0 +1,80 @@
+.w320px {width: 320px; padding: 0 15px}
+.w-270px {min-width: 270px;}
+.w-1308px {width: 1308px}
+.w30percent {width: 30%}
+.h388px {height: 388px; max-height: 388px; min-height: 388px}
+.h65px {height: 65px}
+.img290x272 {width: 290px;height: 272px}
+
+.color42da {color: #42b2da}
+.color9a {color: #9a9a9a}
+.color4c {color: #4c4c4c}
+.colorb {color: #bbb}
+
+.bgblue {background-color: #42b2da}
+.bg-black {background-color: black; color: white}
+[class*="bg-pattern-"] {background-repeat: repeat-x; background-size:auto}
+.bg-pattern-black {background-image: url(img/bg-pattern.png); max-height: 75px; min-height: 75px;color: white}
+.bg-pattern-grey {background-image: url(img/bg-pattern2.png); color: #4c4c4c;background-repeat: repeat}
+.bg-repeat-pattern {background-image: url(img/bg-pattern3.png);background-repeat: repeat}
+[class*="bg-img-"] {background-repeat: no-repeat; background-size: auto}
+.bg-img-cart {background-image: url(img/ic/ic-cart.png);width: 36px;height: 27px}
+.bg-img-fluid {background-image: url(img/bg-fluid.png); height: 333px}
+.bg-img-btn-cart {background-image: url(img/ic/ic-btn-cart.png); height: 15px; width: 20px}
+.bg-img-x {background-image: url(img/ic/ic-x.png); width: 14px; height: 14px}
+
+.txt-line-through {text-decoration: line-through}
+.placeholder-b::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb;
+  opacity: 1; /* Firefox */
+}
+
+.placeholder-b:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #bbbbbb;
+}
+
+.placeholder-b::-ms-input-placeholder { /* Microsoft Edge */
+  color: #bbbbbb;
+}
+.pos-relative {position: relative}
+.pos-absolute {position: absolute}
+.top-12 {top: -12px}
+.left-12 {left: -12px}
+
+.sale-off {width: 68px; height: 68px}
+.overflow-hide {overflow: hidden}
+.border3pxb {border: 3px solid #bbb}
+
+[class*="ic-social-"] {width: 26px; height: 26px; background-repeat: no-repeat; background-size: 100%}
+.ic-social-face {background-image: url(img/ic/ic-social-face.png)}
+.ic-social-twit {background-image: url(img/ic/ic-social-twitter.png)}
+.ic-social-insta {background-image: url(img/ic/ic-social-insta.png)}
+.ic-social-youtube {background-image: url(img/ic/ic-social-youtube.png)}
+.border-top-dash {border-top: 1px dashed #505050}
+.border-dashe4 {border-top: 1px dashed #e4e4e4; border-bottom: 1px dashed #e4e4e4}
+.border-black {border: 3px solid black}
+.border-black:hover {background-color: black !important;color: white}
+@media screen and (max-width: 1626px) {
+    .w-1308px {width: 100%}
+}
+@media screen and (max-width: 767px) {
+    .hide-on-pad {display: none}
+    .bg-img-fluid {background-size: auto}
+    .container { max-width:100%}
+    .css-on-spad .w30percent {width: 60%}
+}
+@media screen and (max-width: 682px) {
+    .hide-on-spad {display: none}
+}
+@media screen and (max-width: 480px) {
+    .h388px {height: auto;max-height: inherit}
+    .css-on-spad {flex-direction: column}
+    .css-on-spad .w30percent {width: 100%}
+    .css-on-spad .org-info {margin-top: 60px}
+}
+@media screen and (max-width: 320px) {
+    .hide-on-phone {display: none !important}
+    .dnb-search-box {margin-left: 8px !important}
+    .onfone-pl15px {padding-left: 15px}
+    .bg-img-fluid {background-position: 56%}
+}

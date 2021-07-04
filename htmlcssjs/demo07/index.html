@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Demo 07</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body style="font-family: 'Noto Sans', sans-serif">
+  <section class="bg-pattern-black d-flex">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="small">
+        <p class="d-inline-block mb-0">Get Today's Trends and Hottest Sales Delivered Right to Your Inbox.</p>
+        <a class="text-uppercase color42da" href="javascript:void(0)">Sign up now</a>
+      </div>
+      <div class="d-flex align-items-center hide-on-phone">
+        <span></span>
+        <p class="mb-0">Welcome <span class="colorb">User</span></p>
+        <p class="d-inline-block mb-0 colorb ml-3 mr-3">|</p>
+        <p class="mb-0">Login</p>
+        <span class="ml-2 colorb mr-2">or</span>
+        <button class="btn rounded-lg btn-outline-primary text-white ml-1">Get Started</button>
+      </div>
+    </div>    
+  </section>
+  <section class="mb-3 mt-2">
+    <div class="container d-flex justify-content-space align-items-center pt-2">
+      <div class="d-inline-block">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/logo2.png">
+          <img src="img/logo.png" alt="logo">
+        </picture>
+      </div>
+      <div class="input-group border-0 rounded ml-5 dnb-search-box">
+        <input type="text" class="form-control border-0 bg-light" placeholder="Search your favorite items">
+        <div class="input-group-append bg-light">
+          <button class="btn btn-link fas fa-search text-dark" type="button"></button>
+        </div>
+      </div>
+      <div class="d-inline-flex ml-2 align-items-center ml-3" style="min-width: 100px">
+        <span class="bg-img-cart d-inline-block mr-1"></span>
+        <span class="d-inline-flex flex-column ml-2">
+          <span class="small font-weight-bold">My Cart</span>
+          <span class="small text-secondary">0 Items</span>
+        </span>
+      </div>
+    </div>
+  </section>
+    
+<div class="bg-pattern-grey">
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavOnMobile">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav collapse navbar-collapse justify-content-around" id="collapseNavOnMobile">
+      <ul class="navbar-nav font-weight-bold d-flex justify-content-between">
+        <li class="nav-item active">
+          <a class="nav-link" href="javascript:void(0)">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Shipping</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Exchange &amp; Returns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="javascript:void(0)">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div search>
+    
+    </div>
+    </nav>
+    
+  </div>
+</div>
+
+  <div class="w-100 bg-img-fluid"> </div>
+    
+  <section class="d-flex justify-content-center">
+    <div class="d-inline-flex onfone-pl15px">
+      <aside class="w-270px mr-5 mt-n5 hide-on-pad">
+        <div class="bg-black pt-3 pb-3 pl-3 pr-3 mt-n3">
+          <h5 class="text-uppercase mb-0">Filter Search</h5>
+        </div>
+        <div class="shadow-sm bg-white text-uppercase">
+          <div class="bg-pattern-grey pl-3 pr-3 d-flex justify-content-between align-items-center w-100 h65px">
+            <h5 class="mb-0">Categories</h5>
+            <span class="fas fa-chevron-down"></span>
+          </div>
+          <ul class="pl-3 pb-4">
+            <li class="d-flex justify-content-between pr-2 mt-3 mb-3">
+              <a class="text-primary" href="javascript void(0)">Clotheing</a>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="chkClotheing" name="chkClotheing" checked>
+                <label class="custom-control-label" for="chkClotheing"></label>
+              </div>
+            </li>
+            <li class="d-flex justify-content-between pr-2 mb-3">
+              <a class="text-secondary" href="javascript void(0)">Shoes</a>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="chkShoes" name="chkShoes">
+                <label class="custom-control-label" for="chkShoes"></label>
+              </div>
+            </li>
+            <li class="d-flex justify-content-between pr-2 mb-3">
+              <a class="text-secondary" href="javascript void(0)">Accessories</a>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="chkAccessories" name="chkAccessories">
+                <label class="custom-control-label" for="chkAccessories"></label>
+              </div>
+            </li>
+            <li class="d-flex justify-content-between pr-2 mb-3">
+              <a  class="text-secondary" href="javascript void(0)">Groming</a>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="chkGroming" name="chkGroming">
+                <label class="custom-control-label" for="chkGroming"></label>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="shadow-sm bg-white text-uppercase">
+          <div class="bg-pattern-grey pl-3 pr-3 d-flex justify-content-between align-items-center w-100 h65px">
+            <h5 class="mb-0">Brands</h5>
+            <span class="fas fa-chevron-right"></span>
+          </div>
+        </div>
+      </aside>
+      <div class="w-1308px">
+        <div class="d-flex flex-wrap text-uppercase align-items-center mb-3 pt-4">
+          <h6 class=" font-weight-bold mr-2">Your are here</h6>
+          <h6 class=" font-weight-bold mr-3">//</h6>
+          <h6 class=" font-weight-bold colorb">Home</h6><h6 class="bg-img-x ml-2 mr-2"></h6>
+          <h6 class=" font-weight-bold colorb">Men</h6><h6 class="bg-img-x ml-2 mr-2"></h6>
+          <h6 class=" font-weight-bold colorb">Accessories</h6><h6 class="bg-img-x ml-2 mr-2"></h6>
+          <h6 class=" font-weight-bold colorb">Color:Green</h6><h6 class="bg-img-x ml-2 mr-2"></h6>
+          <h6 class=" font-weight-bold text-primary">Pricing: $0 - $359</h6><h6 class="bg-img-x ml-2 mr-2"></h6>
+        </div>
+        <div class="d-flex border-dashe4 pt-2 mb-4">
+          <h2 class="font-weight-light mr-3">625</h2>
+          <h2 class="font-weight-light colorb">Results Found</h2>
+        </div>
+        <div class="row justify-content-center pt-1">
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod1.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0 bg-white"></button>
+                <button class="far fa-heart h4 mb-0 border-0 bg-white"></button>
+                <button class="far fa-bell h4 mb-0 border-0 bg-white"></button>
+                <button class="fas fa-share-alt h4 mb-0 border-0 bg-white"></button>
+              </div>
+            </article> 
+          </div>
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod2.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+         
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod2.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod1.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+            
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod1.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0 bg-white"></button>
+                <button class="far fa-heart h4 mb-0 border-0 bg-white"></button>
+                <button class="far fa-bell h4 mb-0 border-0 bg-white"></button>
+                <button class="fas fa-share-alt h4 mb-0 border-0 bg-white"></button>
+              </div>
+            </article> 
+          </div>
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod2.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+         
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod2.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod1.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+            
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod1.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0 bg-white"></button>
+                <button class="far fa-heart h4 mb-0 border-0 bg-white"></button>
+                <button class="far fa-bell h4 mb-0 border-0 bg-white"></button>
+                <button class="fas fa-share-alt h4 mb-0 border-0 bg-white"></button>
+              </div>
+            </article> 
+          </div>
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod2.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+         
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod2.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+          <div class="w320px">
+            <article class="pos-relative border rounded mb-3 overflow-hide">
+              <span class="pos-absolute top-12 left-12 rounded-circle bg-black sale-off pl-4 pt-3">25% Off</span>
+              <img class="img290x272 ml-2" src="img/products/prod1.png" >
+              <div class="pt-2 pl-3 pr-3 pb-2 mb-2">
+                <h6 class="text-center">Lorem ipsum dolor sit amet</h6>
+                <div class="d-flex justify-content-between w-100">
+                  <span class="w-50">
+                    <h6 class="text-secondary txt-line-through mb-0">$3000</h6>
+                    <h4 class="text-primary mb-0">$3599</h4>
+                  </span>
+                  <button class="btn d-flex align-items-center bg-black rounded-0 pl-3 pr-3 pt-0 pb-0">
+                    <span class="bg-img-btn-cart mr-2"></span>Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between p-3 border-top">
+                <button class="fas fa-search h4 mb-0 border-0"></button>
+                <button class="far fa-heart h4 mb-0 border-0"></button>
+                <button class="fas fa-bell h4 mb-0 border-0"></button>
+                <button class="fas fa-share h4 mb-0 border-0"></button>
+              </div>
+            </article> 
+          </div>
+            
+        </div>  
+        <div class="w-100 d-flex justify-content-center pb-3">
+          <button type="button" class="btn rounded-0 bg-white border-black text-uppercase">Load More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+<footer class="h388px bg-repeat-pattern pt-4">
+  <div class="container pt-5">
+    <div class="d-flex justify-content-between css-on-spad">
+      <section class="w30percent text-white">
+        <h1 class="mr-2 mb-4">Newsletter</h1>
+        <p class="colorb mb-5">Get Today's Trends and Hottest Sales Delivered Right to Your Inbox.</p>
+        <div class="input-group border3pxb">
+          <input type="text" class="form-control border-0 bg-black rounded-0 placeholder-b" placeholder="Enter Mail Id">
+          <div class="input-group-append bg-black colorb">
+            <button class="btn btn-link fab fa-telegram-plane colorb" type="button"></button>
+          </div>
+        </div>
+      </section>
+      <section class="w30percent clearfix hide-on-spad">
+        <ul class="d-inline-block list-unstyled">
+          <li><a class="colorb" href="javascript void(0)">About Us</a></li>  
+          <li><a class="colorb" href="javascript void(0)">How it works</a></li>  
+          <li><a class="colorb" href="javascript void(0)">Blog</a></li>  
+          <li><a class="colorb" href="javascript void(0)">FAQ</a></li>  
+          <li><a class="colorb" href="javascript void(0)">Shipping</a></li>  
+          <li><a class="colorb" href="javascript void(0)">Pricing</a></li>  
+          <li><a class="colorb" href="javascript void(0)">Privacy and Policies</a></li>  
+          <li><a class="colorb" href="javascript void(0)">Terms and Conditions</a></li>  
+        </ul>
+        <ul class="d-inline-block list-unstyled float-right">
+          <li><a class="colorb" href="javascript void(0)">Exchanges &amp; Returns</a></li>  
+          <li><a class="colorb" href="javascript void(0)">Contact Us</a></li>  
+          <li><a class="colorb" href="javascript void(0)">Careers</a></li>  
+        </ul>
+      </section>
+      <section class="org-info">
+        <div class="mb-3"><img src="img/logo-n.png" /></div>
+        <div class="colorb">
+          <p class="mb-0">97 Esslecfield Drive</p>
+          <p class="mb-0">Toroton, Oriaton</p>
+          <p class="mb-0">M1W 2Y20</p>
+          <a href="mailto:baodaihd89@gmail.com">support@envole.com</a>
+          <div class="d-flex justify-content-between mt-3">
+            <button type="button" class="btn ic-social-face"></button>
+            <button type="button" class="btn ic-social-twit"></button>
+            <button type="button" class="btn ic-social-insta"></button>
+            <button type="button" class="btn ic-social-youtube"></button>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="colorb pt-3 mt-5 border-top-dash small">
+      <p class="text-uppercase small mt-1">&copy; Copyright 2020 ecma.app all rights reserved</p>  
+    </section>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

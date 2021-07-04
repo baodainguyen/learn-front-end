@@ -1,0 +1,191 @@
+
+.d-w-full {width: 100%}
+.d-h-full {height: 100%}
+.d-over-hide {overflow: hidden}
+.d-w-wrap {width: 1170px; margin: 0 auto}
+.d-w-wrap::after {clear: both}
+.d-w67 {width: 66.66%}
+.d-w33 {width: 33.33%}
+.d-w41 {width: 41%; min-width: 170px}
+.d-w50 {width: 50%}
+.d-w90 {width: 90px}
+.d-w60 {width: 60px}
+.d-h292 {height: 292px}
+.d-line3 {height: 3px; top: 13px; z-index: -1}
+.d-mid-v {display: block; margin-left: auto; margin-right: auto}
+.d-circle {border-radius: 50px; -webkit-border-radius: 50px; -moz-border-radius: 50px}
+.d-h80 {height: 80px; max-height: 80px}
+.d-h76 {max-height: 76px}
+.d-h40 {height: 40px; width: 100%}
+.d-h870 {height: 870px; width: 100%}
+.d-h676 {height: 676px}
+.d-h436 {height: 436px}
+.d-h240 {height: 240px}
+.da-btn {width: 40px; height: 40px}
+.da-btn > * {position: absolute; top: 12px}
+.d-instagram {left: 12px}
+.d-facebook {left: 13px}
+.d-user {left: 10px; font-size: 21px; top: 9px}
+.d-flex {display: flex; justify-content: center; flex-flow: row wrap}
+.d-in-block {display: inline-block}
+.d-in-grid {display: inline-grid}
+.d-border-wh {border: 1px solid #ffffff}
+.d-border-bl {border: 1px solid #000000}
+.d-border-grey {border: 1px solid #cccccc}
+.d-border444 {border: 1px solid #444444}
+.d-border-o {border: 1px solid #fdbc0e}
+.d-border-top1px {border-top: 1px solid #e6e6e6}
+.lang > a:first-child {border-right: 1px solid #e6e6e6}
+.d-list-hr {list-style: none}
+.d-list-hr > li {color: white}
+.d-pad80 {padding: 80px}
+.d-padb70 {padding-bottom: 70px}
+.d-pad50-0 {padding: 50px 0}
+.d-padrl36 {padding-left: 36px; padding-right: 36px}
+.d-padl50 {padding-left: 50px}
+.d-padb30 {padding-bottom: 30px}
+.d-padtb20 {padding-top: 20px; padding-bottom: 20px}
+.d-padl20 {padding-left: 20px}
+.d-padt10 {padding-top: 10px}
+.d-padl10 {padding-left: 10px}
+.d-padr10 {padding-right: 10px}
+.d-padb10 {padding-bottom: 10px}
+.d-padt8 {padding-top: 8px}
+.d-padl8 {padding-left: 8px}
+.d-padr8 {padding-right: 8px}
+.d-padb6 {padding-bottom: 6px}
+.d-pad5 {padding: 5px}
+.d-pad3x20 {padding: 3px 20px}
+.d-pad3x28 {padding: 3px 28px}
+.d-pad12x18 {padding: 12px 0 0 18px}
+.d-marg0x5 {margin: 0 5px 0 0}
+.d-pad1 {padding: 1px}
+.d-pos-re {position: relative}
+.d-pos-ab {position: absolute}
+.d-abt70 {top: 70%}
+.d-abt50 {top: 50%}
+.d-abt0 {top: 0}
+.d-abb0 {bottom: 0}
+.d-abl0 {left: 0}
+.d-abr0 {right: 0}
+.d-t30-r50 {top: 30px; right: 50px}
+.dz-index {z-index: 99}
+.d-anim-rise {-webkit-transition: all 0.2s linear; transition: all 0.2s linear }
+.d-cart-view {min-width: 304px; max-width: 444px; top: 42px; right: 6px}
+.d-anim-up {visibility: hidden; opacity: 0; margin-top: 14px}
+.d-hoverup:hover .d-anim-up {visibility: visible; opacity: 1; margin-top: 0;
+  -webkit-transform: translate3d(0, -2px, 0); transform: translate3d(0, -2px, 0)}
+.account {display: inline-flex}
+.sub-menu {padding: 20px 30px; margin-left: -28px}
+.sub-menu li {padding-bottom: 10px}
+.d-pull-l {float: left}
+.d-pull-r {float: right}
+.d-slide {display: none}
+.d-slide:first-child {display: block}
+.d-col4-l {width: 25%; float: left}
+.d-col4-l:last-child {display: none}
+.d-hoverorange:hover {text-decoration: none !important}
+.d-hoverorange:hover * {color: #fdbc0e !important}
+.d-hover-shadow:hover {
+  -webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.1); box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  -webkit-transform: translate3d(0, -2px, 0); transform: translate3d(0, -2px, 0)
+}
+.d-animation {transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+	-webkit-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    -moz-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    -o-transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    -webkit-transform-origin: 50% 100%; -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%; transform-origin: 50% 100%;
+    transform: perspective(200px) rotate3d(1, 0, 0, -90deg) translateY(100%);
+    -webkit-transform: perspective(200px) rotate3d(1, 0, 0, -90deg) translateY(100%);
+    -moz-transform: perspective(200px) rotate3d(1, 0, 0, -90deg) translateY(100%);
+    -ms-transform: perspective(200px) rotate3d(1, 0, 0, -90deg) translateY(100%);
+    -o-transform: perspective(200px) rotate3d(1, 0, 0, -90deg) translateY(100%)}
+.d-hover-shadow:hover .d-animation {
+    transform: perspective(200px) rotate3d(1, 0, 0, 0deg) translateY(0);
+    -webkit-transform: perspective(200px) rotate3d(1, 0, 0, 0deg) translateY(0);
+    -moz-transform: perspective(200px) rotate3d(1, 0, 0, 0deg) translateY(0);
+    -ms-transform: perspective(200px) rotate3d(1, 0, 0, 0deg) translateY(0);
+    -o-transform: perspective(200px) rotate3d(1, 0, 0, 0deg) translateY(0)
+}
+.d-hover-shadow:hover .mask-hover {opacity: 0.6}
+.mask-hover {background-color: #000000; opacity: 0}
+.d-hover-fdbc0e:hover {background-color: #fdbc0e; border-color: #fdbc0e; color: white !important; cursor: pointer}
+.d-hover-orange:hover {color: #fdbc0e !important}
+.dd-2-8,.dd-3-8 {width: 33.33%}
+.dd2-8 {width: 66.66%}
+.dd2-8 > div{width: 50%; height: 220px}
+.d-white {color: #ffffff}
+.d-black {color: #444444}
+.d-red {color: #FF5733}
+.d-orange {color: #fdbc0e}
+.d-subcribe {justify-content: space-between}
+footer .d-flex {justify-content: space-between}
+@media (min-width: 994px) {.d-h870 {height: 500px}}
+@media (min-width: 1190px) {.d-h870 {height: 600px}}
+@media (min-width: 1384px) {.d-h870 {height: 700px}}
+@media (min-width: 1582px) {.d-h870 {height: 800px}}
+@media (max-width: 1170px) {
+    .d-w-wrap {width: 100%; margin: 0; padding-left: 0; padding-right: 0}
+}
+@media (max-width: 994px) {
+  .d-h870 {height: 400px}
+}
+@media (max-width: 960px) {
+  .d-col4-l {width: 33.333%} .d-col4-l:last-child {display: block !important}
+  .d-w41 .d-w50 {width: 46%; padding-left: 10px; padding-right: 10px} .d-w41 .d-w50.d-pull-r {width: 36%}
+}
+@media (max-width: 780px) {
+  .d-col4-l {width: 44%} .d-col4-l:last-child {display: none !important}
+  .dd-2-8,.dd-3-8,.dd2-8 {width: 50% !important; position: relative !important; float: left; height: 100%} 
+  .dd2-8 > div{display: block; width: 100%; height: 100%}
+  .d-h240 div.d-h-full {height: 329px; padding-left: 10px; padding-right: 10px}
+  .d-w33,.d-w67 {width: 100%} 
+}
+@media (max-width: 640px) {
+  .d-col4-l {width: 50%} 
+  .d-col4-l:nth-child(2n+1) > div {padding-left: 0; padding-right: 4px}
+  .d-col4-l:nth-child(2n) > div {padding-right: 0; padding-left: 4px}
+  footer .d-col4-l {width: 100%} footer .d-col2 {width: 100%}
+}
+@media (max-width: 610px) {
+  .dnb-menu h7 {font-size: 10px} .d-subcribe form.d-w50 {width: 100%} .d-subcribe .d-col4-l {width: 100%}
+}
+@media (max-width: 568px) {.d-on-fone {display: block !important; white-space: pre-line}}
+@media (max-width: 486px) {
+  .dnb-menu h7 {font-size: 6px} .d-w41 .d-w50 {width: 100% !important; text-align: left; float: none} .d-w41 .d-pull-r {padding-left: 10px; padding-top: 20px} .d-w41 .d-pull-r .d-padl50 {padding-right: 150px; padding-left: 0}
+}
+@media (max-width: 454px) {
+  .d-col4-l {width: 100%} .d-col4-l > div {padding-left: 50px !important; padding-right: 50px !important}
+}
+@media (max-width: 414px) {
+  .dnb-menu {position: fixed; bottom: 0; z-index: 99; background-color: white} 
+  body {padding-bottom: 142px}
+  .d-h870 {height: 418px}
+  .d-h240 div.d-h-full {padding-left: 0; padding-right: 0} .d-border444 {border: none}
+  .d-hide-fone {display: none} 
+  .d-w50 {width: 100%} .d-fonerl0 {padding-left: 0; padding-right: 0}
+  .d-w67 .d-h80 {margin-bottom: 30px}
+  .dd-2-8,.dd-3-8,.dd2-8 {width: 100% !important; float: none} .dd2-8 .d-pull-l {float: none}
+}
+@media only screen and (min-device-width: 411px) and (max-device-width: 414px) and (orientation:portrait) {
+  .dnb-menu h7 {font-size: 8px}
+}
+@media (max-width: 411px) {
+  .sfont14 {font-size: 12px !important}
+  .font28 {font-size: 23px}
+  .d-h870 {height: 418px}
+  .d-col4-l > div {padding-left: 30px !important; padding-right: 30px !important}
+}
+@media (max-width: 375px) {.d-logo {width: 42px}}
+@media (max-width: 360px) {.d-col4-l > div {padding-left: 10px !important; padding-right: 10px !important} .d-list-hr a {font-size: 13px}}
+@media (max-width: 334px) {
+  .dnb-menu h7 {font-size: 5px}
+  .d-cart-view {width: 304px; right: -12px} .d-cart-view > div.text-c {padding-left: 0; padding-right: 0}
+  .d-list-hr a {font-size: 11px}
+  .notify-num {font-size: 12px}
+  .xxs-hide {display: none}
+  .da-btn {width: 36px; height: 36px} .da-btn > span {font-size: 16px; left: 10px; top: 9px}
+  .d-mid-v {padding-top: 6px}
+  .d-col4-l > div {padding-left: 0 !important; padding-right: 0 !important}
+}

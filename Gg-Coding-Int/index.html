@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gg Coding Int</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+      <div>
+        <div id="input">
+        </div>
+      
+      </div>
+    
+      <div>
+        <h5>Available time</h5>
+        <div id="ouput"></div>
+      </div>
+    
+      
+
+      <script src="AvailableTimeSetupMetting.js"></script>
+      <script>
+          
+        $(document).ready(function(){ 
+          
+          Atsm.setRange(30).setPerson({
+            metting: [['9:00', '10:30'], ['12:00', '13:00'], ['16:00', '18:00']],
+            working: ['9:00', '20:00']
+          }).setPerson({
+              metting: [['10:00', '11:30'], ['12:30', '14:00'], ['14:30', '15:00'], ['16:00', '17:00']],
+              working: ['10:00', '18:30']
+          }).setPerson({
+              metting: [['8:30', '11:00'], ['13:30', '14:00'], ['14:30', '15:00'], ['16:00', '17:00']],
+              working: ['8:30', '17:30']
+          }).setPerson({
+              metting: [['8:00', '9:00'], ['10:00', '10:30'], ['11:30', '12:00'], ['14:30', '15:00'], ['16:30', '17:00']],
+              working: ['8:00', '19:00']
+          }).View(document.getElementById('input'), document.getElementById('ouput'));
+            
+        });
+          
+      </script>
+  </body>
+</html>

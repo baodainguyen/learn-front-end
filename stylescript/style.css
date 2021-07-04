@@ -1,0 +1,138 @@
+body {font-family: Poppins;}
+        .scrollbar-h0::-webkit-scrollbar { height: 0px; }
+        a:hover {text-decoration: none !important;}
+        p, strong, a, h1, h2, h3, h4, h5, h6, img {
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+        -webkit-user-select: none;
+        /* Safari */
+        -khtml-user-select: none;
+        /* Konqueror HTML */
+        -moz-user-select: none;
+        /* Old versions of Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer/Edge */
+        user-select: none;
+        /* Non-prefixed version, currently
+            supported by Chrome, Edge, Opera and Firefox */
+        }
+
+        .box-264-396 {
+            min-width: 380px !important;
+            height: 396px;
+            max-height: 396px;
+        }
+
+        .box-h198 {
+            height: 183px;
+            max-height: 183px;
+        }
+
+        .box-h99 {
+            height: 79.5px;
+            max-height: 79.5px;
+        }
+
+        .box-h111 {
+            height: 129.5px;
+            max-height: 129.5px;
+        }
+
+        .minw200 { min-width: 200px; }
+
+        .d-grid {
+            display: grid;
+            grid-gap: 30px;
+            width: 100% !important;
+            grid-template-columns: auto auto;
+        }
+
+        .d-grid-1st > .card:first-child {
+            grid-column: 1/span 2;
+            grid-row: 1;
+        }
+
+        .d-grid-lst { grid-gap: 20px; }
+        .d-grid-lst > .card:last-child { grid-column: 1/span 2; }
+
+        .rounded { border-radius: 12px !important; }
+
+        .rounded-lg { border-radius: 18px !important; }
+
+        .bg-img-ui {
+            background-image: url("https://i.pinimg.com/564x/29/98/2b/29982bb0fe1c03d95c11d0144be79938.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg-img-ui.bg2 {
+            background-image: url("https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png");
+        }
+        .bg-img-ui.bg-coach{
+            background-image: url("/stylescript/assets/bgcoach.png");
+        }
+        .bg-img-ui.bg-elnove{
+            background-image: url("/stylescript/assets/elnove.png");
+        }
+        .bg-img-ui.bg-gameportal{
+            background-image: url("/stylescript/assets/gameportal.png");
+        }
+        .bg-img-ui.bg-graphql{
+            background-image: url("/stylescript/assets/graphql.png");
+        }
+        .bg-img-ui.bg-monhue{
+            background-image: url("/stylescript/assets/monhue.jpeg");
+        }
+        .bg-img-ui.bg-docker{
+            background-image: url("/stylescript/assets/docker.png");
+        }
+        .bg-img-ui.bg-vuejs{
+            background-image: url("/stylescript/assets/vuejs.jpg");
+        }
+        .bg-img-ui.bg-bootstrap5{
+            background-image: url("/stylescript/assets/bootstrap5.jpg");
+        }
+        .bg-img-ui.bg-bootstrap5w{
+            background-image: url("/stylescript/assets/bootstrapt5w.jpg");
+        }
+        .bg-img-ui.bg-sass{
+            background-image: url("/stylescript/assets/sass.jpg");
+        }
+        .bg-img-ui.bg-gitandgg{
+            background-image: url("/stylescript/assets/gitandgg.png");
+        }
+        .bg-img-ui.bg-ggdi{
+            background-image: url("/stylescript/assets/ggdi.jpg");
+        }
+        .pos-abs { position: absolute; }
+
+        .pos-rel { position: relative; }
+
+        .mt-9 { margin-top: 110px !important;  }
+
+        .mt-n9 { margin-top: -84px !important; }
+        .box46px {width: 46px; height:46px;}
+        .img-cover {object-fit: cover;}
+
+        @media screen and (max-width: 992px) {
+
+            .mt-n9 { margin-top: 0 !important; }
+
+            .dnb-mobile-sticky-top {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                z-index: 1020;
+            }
+
+            .dnb-mobile-sticky-top .dnb-search { background-color: white; }
+
+            .dnb-mobile-sticky {
+                position: sticky;
+                top: 84px !important;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .dnb-mobile-sticky-top { background-color: white; }
+
+            #dnb-body > div:first-child { margin-top: 0 !important; }
+        }

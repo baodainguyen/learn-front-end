@@ -68,40 +68,40 @@ body {font-family: Poppins;}
             background-image: url("https://www.geeklawblog.com/wp-content/uploads/sites/528/2018/12/liprofile-656x369.png");
         }
         .bg-img-ui.bg-coach{
-            background-image: url("/stylescript/assets/bgcoach.png");
+            background-image: url("stylescript/assets/bgcoach.png");
         }
         .bg-img-ui.bg-elnove{
-            background-image: url("/stylescript/assets/elnove.png");
+            background-image: url("stylescript/assets/elnove.png");
         }
         .bg-img-ui.bg-gameportal{
-            background-image: url("/stylescript/assets/gameportal.png");
+            background-image: url("stylescript/assets/gameportal.png");
         }
         .bg-img-ui.bg-graphql{
-            background-image: url("/stylescript/assets/graphql.png");
+            background-image: url("stylescript/assets/graphql.png");
         }
         .bg-img-ui.bg-monhue{
-            background-image: url("/stylescript/assets/monhue.jpeg");
+            background-image: url("stylescript/assets/monhue.jpeg");
         }
         .bg-img-ui.bg-docker{
-            background-image: url("/stylescript/assets/docker.png");
+            background-image: url("stylescript/assets/docker.png");
         }
         .bg-img-ui.bg-vuejs{
-            background-image: url("/stylescript/assets/vuejs.jpg");
+            background-image: url("stylescript/assets/vuejs.jpg");
         }
         .bg-img-ui.bg-bootstrap5{
-            background-image: url("/stylescript/assets/bootstrap5.jpg");
+            background-image: url("stylescript/assets/bootstrap5.jpg");
         }
         .bg-img-ui.bg-bootstrap5w{
-            background-image: url("/stylescript/assets/bootstrapt5w.jpg");
+            background-image: url("stylescript/assets/bootstrapt5w.jpg");
         }
         .bg-img-ui.bg-sass{
-            background-image: url("/stylescript/assets/sass.jpg");
+            background-image: url("stylescript/assets/sass.jpg");
         }
         .bg-img-ui.bg-gitandgg{
-            background-image: url("/stylescript/assets/gitandgg.png");
+            background-image: url("stylescript/assets/gitandgg.png");
         }
         .bg-img-ui.bg-ggdi{
-            background-image: url("/stylescript/assets/ggdi.jpg");
+            background-image: url("stylescript/assets/ggdi.jpg");
         }
         .pos-abs { position: absolute; }
 

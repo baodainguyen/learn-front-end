@@ -1,9 +1,8 @@
 import mmap
 
-searchText = 'á '
+searchText = 'mụ'
 
 def check():
-    found = False
     with open('words.txt', 'rb', 0) as f, \
          mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as s:
         bText = searchText.encode()

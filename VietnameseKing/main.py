@@ -6,12 +6,19 @@ text = 'l/i/n/h/m/ụ/c'
 keyWord = 'ụ'
 
 
-def removeSlash(text):
+def removeFowardSlash(text):
     return text.replace('/', '')
 
-sText = removeSlash(text)
+sText = removeFowardSlash(text)
 
-def ignore(w, ignoreChar):
+def getWords(w):
+    print(w)
+
+def checkLengh(w):
+    if(len(sText) <= len(w)):
+        getWords(w)
+
+def filterWordsWithRegex(w, ignoreChar):
     rr = []
     a = 'à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ'.replace(ignoreChar, '').replace('||', '|')
     rr.append(a)
@@ -29,11 +36,15 @@ def ignore(w, ignoreChar):
     if(ignoreChar != d):
         rr.append(d)
 
+    isIgnore = False
     for _c in rr:
         x = re.findall(_c, w)
-        if(len(x) < 1):
-            print(w)
+        if(len(x) > 0):
+            isIgnore = True
+            break
 
+    if(isIgnore == False): 
+        checkLengh(w)
 
 def findWords(searchText):
     with open(fileTxt, 'rb', 0) as f, \
@@ -47,14 +58,9 @@ def findWords(searchText):
             start = beginLeft(s, i, end)
             word = getWord(s, start, end)
             #print(sText, word)
-            ignore(word, keyWord)
+            filterWordsWithRegex(word, keyWord)
             i = s.find(bText, end)
 
-# def filterWords(text, word):
-#     for _w in word:
-#         x = text.find(_w)
-#         if(x > -1):
-#             print(word)
 
 def getWord(s, b, e):
     return (s[b:e].decode("utf-8"))

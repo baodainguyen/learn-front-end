@@ -5094,6 +5094,7 @@
 {"chí cốt"}
 {"chi cục"}
 {"chi cục kiểm soát hđks mt"}
+{"kiểm soát chất lượng"}
 {"chi cục ksmt"}
 {"chí cùng lực kiệt"}
 {"chỉ dẫn"}

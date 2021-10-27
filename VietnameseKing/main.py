@@ -14,9 +14,14 @@ sText = removeFowardSlash(text)
 def getWords(w):
     print(w)
 
-def checkLengh(w):
-    if(len(sText) <= len(w)):
+def compareChars(w):
+    l = len(sText)
+    for _c in w:
+        if sText.find(_c) > -1:
+            l -= 1
+    if l < 1:
         getWords(w)
+
 
 def filterWordsWithRegex(w, ignoreChar):
     rr = []
@@ -44,7 +49,7 @@ def filterWordsWithRegex(w, ignoreChar):
             break
 
     if(isIgnore == False): 
-        checkLengh(w)
+        compareChars(w)
 
 def findWords(searchText):
     with open(fileTxt, 'rb', 0) as f, \

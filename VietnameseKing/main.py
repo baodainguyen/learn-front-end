@@ -2,9 +2,35 @@ import mmap
 import re
 
 fileTxt = 'words.txt'
-text = 'l/i/n/h/m/ụ/c'
-keyWord = 'ụ'
+text = 'k/ế/h/o/ạ/h/c'
 
+
+def findVNCharWithRegex(w):
+    rr = []
+    a = 'à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ'
+    rr.append(a)
+    o = 'ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ'
+    rr.append(o)
+    e = 'è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ'
+    rr.append(e)
+    u = 'ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ'
+    rr.append(u)
+    i = 'ì|í|ị|ỉ|ĩ'
+    rr.append(i)
+    y = 'ỳ|ý|ỵ|ỷ|ỹ'
+    rr.append(y)
+    d = 'đ'
+    rr.append(d)
+
+    ws = []
+    for _c in rr:
+        x = re.findall(_c, w)
+        if(len(x) > 0):
+            ws = ws + x
+    return ws
+
+keyWords = findVNCharWithRegex(text)
+print(keyWords)
 
 def removeFowardSlash(text):
     return text.replace('/', '')
@@ -51,7 +77,7 @@ def filterWordsWithRegex(w, ignoreChar):
     if(isIgnore == False): 
         compareChars(w)
 
-def findWords(searchText):
+def findWords(searchText):  #vnWordArr
     with open(fileTxt, 'rb', 0) as f, \
          mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as s:
         bText = searchText.encode()
@@ -63,10 +89,15 @@ def findWords(searchText):
             start = beginLeft(s, i, end)
             word = getWord(s, start, end)
             #print(sText, word)
-            filterWordsWithRegex(word, keyWord)
+            filterWordsWithRegex(word, searchText)
             i = s.find(bText, end)
+def find(vnWordArr):
+    with open(fileTxt,'rb', 0) as f, mmap.mmap()
 
 
+
+
+    
 def getWord(s, b, e):
     return (s[b:e].decode("utf-8"))
 
@@ -86,5 +117,6 @@ def beginLeft(s, i, end):
     # print(j+1)
     return j+1
 
+for _c in keyWords:
+    findWords(_c)
 
-findWords(keyWord)

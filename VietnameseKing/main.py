@@ -2,7 +2,8 @@ import mmap
 import re
 
 fileTxt = 'words.txt'
-text = 'k/ế/h/o/ạ/h/c'
+text = 'á/n/h/i/ệ/t/đ/ớ/i'
+text = 'l/i/n/h/m/ụ/c'
 
 
 def findVNCharWithRegex(w):
@@ -30,7 +31,6 @@ def findVNCharWithRegex(w):
     return ws
 
 keyWords = findVNCharWithRegex(text)
-print(keyWords)
 
 def removeFowardSlash(text):
     return text.replace('/', '')
@@ -77,46 +77,37 @@ def filterWordsWithRegex(w, ignoreChar):
     if(isIgnore == False): 
         compareChars(w)
 
-def findWords(searchText):  #vnWordArr
-    with open(fileTxt, 'rb', 0) as f, \
-         mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as s:
-        bText = searchText.encode()
-        i = s.find(bText)
-        z = s.rfind(bText)
-        
-        while (i > -1 and i <= z):
-            end = endRight(s, i)
-            start = beginLeft(s, i, end)
-            word = getWord(s, start, end)
-            #print(sText, word)
-            filterWordsWithRegex(word, searchText)
-            i = s.find(bText, end)
-def find(vnWordArr):
-    with open(fileTxt,'rb', 0) as f, mmap.mmap()
 
 
-
-
+def filterWordIn(word, vnCharArr):
+    c = len(vnCharArr)
+    w = word
+    for _c in vnCharArr:
+        i = w.find(_c)
+        if(i > -1): 
+            c -= 1
+            w.replace(_c, '')
     
+    if(c < 1 and len(sText) < len(word)):
+        print(word)
+
 def getWord(s, b, e):
     return (s[b:e].decode("utf-8"))
 
-def endRight(s, i):
-    j = s.find(b'"', i)
-    # print(s[i:j].decode("utf-8"), j )
-    return j
-
-def beginLeft(s, i, end):
-    j = i - 1
-    while ( -1 < j and j < i):
-        k = s.find(b'"', j)
-        if(k < 0 or k >= end):
-            j -= 1
-        else:
-            break
-    # print(j+1)
-    return j+1
-
-for _c in keyWords:
-    findWords(_c)
-
+def find_Words(vnCharArr):
+    with open(fileTxt, 'rb', 0) as f, \
+         mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as s:
+        max = s.find(b'}.') - 1
+        print(max)
+        i = 0
+        j = 0
+        while(j < max):
+            i = s.find(b'{', i)
+            i = s.find(b'"', i+1)
+            j = s.find(b'"', i+1)
+            word = getWord(s, i+1, j)
+            filterWordIn(word, vnCharArr)
+            j += 1
+            
+find_Words(keyWords)
+print(keyWords)

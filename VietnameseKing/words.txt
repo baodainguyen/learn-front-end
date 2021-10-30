@@ -1,10 +1,5 @@
-{"a"}
-{"á"}
-{"ạ"}
-{"à"}
-{"ả"}
-{"á à"}
-{"à à"}
+{"a"}{"á"}{"ạ"}{"à"}{"ả"}
+{"á à"}{"à à"}
 {"a di đà"}
 {"a di đà phật"}
 {"a dua"}
@@ -4023,9 +4018,9 @@
 {"cặp díp"}
 {"cặp kè"}
 {"cặp kèm"}
-{"cặp lồng"}
+{"cặp lồng"}{"cặp lồng rau"}{"cặp lồng cơm"}
 {"cặp mạch"}
-{"cặp nhiệt"}
+{"cặp nhiệt"}{"cặp nhiệt độ"}{"cặp nhiệt kế"}
 {"cặp sốt"}
 {"cắt"}
 {"cắt cầu"}
@@ -7134,10 +7129,6 @@
 {"credit card"}
 {"crếp"}
 {"crom"}
-{"cs"}
-{"csdl"}
-{"ct"}
-{"ctcp"}
 {"cty"}
 {"cu"}
 {"củ"}

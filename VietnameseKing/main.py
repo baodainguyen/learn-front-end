@@ -1,12 +1,11 @@
 import mmap
 import re
-
 fileTxt = 'words.txt'
-text = 'á/n/h/i/ệ/t/đ/ớ/i'
-text = 'l/i/n/h/m/ụ/c'
-text = 'i/ặ/c/g/á/c/i'
-text = 'c/c/h/ị/h/t/ủ'
-
+text = 'a/c/n/a/d/h'
+#text = 'i/ặ/c/g/á/c/i'
+#text = 'c/c/h/ị/h/t/ủ'
+text = 'c/ồ/n/l/ặ/c/p/m/g/ơ'
+#text = 'a/d/i/đ/à/p/h/ậ/t'
 
 def findVNCharWithRegex(w):
     rr = []
@@ -31,16 +30,11 @@ def findVNCharWithRegex(w):
         if(len(x) > 0):
             ws = ws + x
     return ws
-
 keyWords = findVNCharWithRegex(text)
 
 def removeFowardSlash(text):
     return text.replace('/', '')
-
 sText = removeFowardSlash(text)
-
-def getWords(w):
-    print(w)
 
 def compareChars(w):
     l = len(sText)
@@ -48,10 +42,8 @@ def compareChars(w):
         if sText.find(_c) > -1:
             l -= 1
     if l < 1:
-        getWords(w)
-
-
-def filterWordsWithRegex(w, ignoreCharArr):
+        print(w)
+def getNotContainChars(ignoreCharArr):
     rr = []
     a = 'à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ'
     for ignoreChar in ignoreCharArr:
@@ -84,23 +76,26 @@ def filterWordsWithRegex(w, ignoreCharArr):
             i += 1
     if(i == len(ignoreCharArr)):
         rr.append(d)
+    return rr
+def filterWordsWithRegex(w, ignoreCharArr):
+    rr = getNotContainChars(ignoreCharArr)
     
     isIgnore = False
     for _c in rr:
-        x = re.findall(_c, w)
-        if(len(x) > 0):
+        x = re.findall(_c, w)   #array
+        y = [a for a in x if a != '']
+        if(len(y) > 0):
             isIgnore = True
             break
 
     if(isIgnore == False): 
         compareChars(w)
 
-
 def anyCharDiff(w):
     for _c in sText:
         if(w.find(_c) < 0):
             return True
-        
+    
     return False
 
 def filterWordIn(word, vnCharArr):
@@ -114,16 +109,14 @@ def filterWordIn(word, vnCharArr):
     
     if(c < 1 and len(sText) < len(word) and anyCharDiff(w) == False):
         filterWordsWithRegex(word, keyWords)
-        #print(word)
 
-def getWord(s, b, e):
-    return (s[b:e].decode("utf-8"))
+def getWord(s, bi, ex):
+    return (s[bi:ex].decode("utf-8"))
 
 def find_Words(vnCharArr):
     with open(fileTxt, 'rb', 0) as f, \
          mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as s:
         max = s.find(b'}.') - 1
-        print(max)
         i = 0
         j = 0
         while(j < max):
@@ -134,4 +127,5 @@ def find_Words(vnCharArr):
             filterWordIn(word, vnCharArr)
             j += 1
             
+#print(keyWords)
 find_Words(keyWords)

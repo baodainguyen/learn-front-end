@@ -4,6 +4,8 @@ import re
 fileTxt = 'words.txt'
 text = 'á/n/h/i/ệ/t/đ/ớ/i'
 text = 'l/i/n/h/m/ụ/c'
+text = 'i/ặ/c/g/á/c/i'
+text = 'c/c/h/ị/h/t/ủ'
 
 
 def findVNCharWithRegex(w):
@@ -49,24 +51,40 @@ def compareChars(w):
         getWords(w)
 
 
-def filterWordsWithRegex(w, ignoreChar):
+def filterWordsWithRegex(w, ignoreCharArr):
     rr = []
-    a = 'à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ'.replace(ignoreChar, '').replace('||', '|')
+    a = 'à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ'
+    for ignoreChar in ignoreCharArr:
+        a = a.replace(ignoreChar, '').replace('||', '|')
     rr.append(a)
-    o = 'ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ'.replace(ignoreChar, '').replace('||', '|')
+    o = 'ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ'
+    for ignoreChar in ignoreCharArr:
+        o = o.replace(ignoreChar, '').replace('||', '|')
     rr.append(o)
-    e = 'è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ'.replace(ignoreChar, '').replace('||', '|')
+    e = 'è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ'
+    for ignoreChar in ignoreCharArr: 
+        e = e.replace(ignoreChar, '').replace('||', '|')
     rr.append(e)
-    u = 'ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ'.replace(ignoreChar, '').replace('||', '|')
+    u = 'ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ'
+    for ignoreChar in ignoreCharArr:
+        u = u.replace(ignoreChar, '').replace('||', '|')
     rr.append(u)
-    i = 'ì|í|ị|ỉ|ĩ'.replace(ignoreChar, '').replace('||', '|')
+    i = 'ì|í|ị|ỉ|ĩ'
+    for ignoreChar in ignoreCharArr:
+        i = i.replace(ignoreChar, '').replace('||', '|')
     rr.append(i)
-    y = 'ỳ|ý|ỵ|ỷ|ỹ'.replace(ignoreChar, '').replace('||', '|')
+    y = 'ỳ|ý|ỵ|ỷ|ỹ'
+    for ignoreChar in ignoreCharArr:
+        y = y.replace(ignoreChar, '').replace('||', '|')
     rr.append(y)
     d = 'đ'
-    if(ignoreChar != d):
+    i = 0
+    for ignoreChar in ignoreCharArr:
+        if(ignoreChar != d):
+            i += 1
+    if(i == len(ignoreCharArr)):
         rr.append(d)
-
+    
     isIgnore = False
     for _c in rr:
         x = re.findall(_c, w)
@@ -78,6 +96,12 @@ def filterWordsWithRegex(w, ignoreChar):
         compareChars(w)
 
 
+def anyCharDiff(w):
+    for _c in sText:
+        if(w.find(_c) < 0):
+            return True
+        
+    return False
 
 def filterWordIn(word, vnCharArr):
     c = len(vnCharArr)
@@ -88,8 +112,9 @@ def filterWordIn(word, vnCharArr):
             c -= 1
             w.replace(_c, '')
     
-    if(c < 1 and len(sText) < len(word)):
-        print(word)
+    if(c < 1 and len(sText) < len(word) and anyCharDiff(w) == False):
+        filterWordsWithRegex(word, keyWords)
+        #print(word)
 
 def getWord(s, b, e):
     return (s[b:e].decode("utf-8"))
@@ -110,4 +135,3 @@ def find_Words(vnCharArr):
             j += 1
             
 find_Words(keyWords)
-print(keyWords)

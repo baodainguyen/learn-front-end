@@ -12426,7 +12426,6 @@
 {"giặc giã"}
 {"giặc lái"}
 {"giặc cái"}
-{"cặc giái"}
 {"giăm"}
 {"giằm"}
 {"giẵm"}

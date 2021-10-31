@@ -2,9 +2,9 @@ import mmap
 import re
 fileTxt = 'words.txt'
 text = 'a/c/n/a/d/h'
-#text = 'i/ặ/c/g/á/c/i'
+text = 'i/ặ/c/g/á/c/i'
 #text = 'c/c/h/ị/h/t/ủ'
-text = 'c/ồ/n/l/ặ/c/p/m/g/ơ'
+#text = 'c/ồ/n/l/ặ/c/p/m/g/ơ'
 #text = 'a/d/i/đ/à/p/h/ậ/t'
 
 def findVNCharWithRegex(w):
@@ -82,11 +82,11 @@ def filterWordsWithRegex(w, ignoreCharArr):
     
     isIgnore = False
     for _c in rr:
-        x = re.findall(_c, w)   #array
-        y = [a for a in x if a != '']
+        x = re.findall(_c, w)           #array
+        y = [a for a in x if a != '']   #filter
         if(len(y) > 0):
             isIgnore = True
-            break
+            break                       #break for
 
     if(isIgnore == False): 
         compareChars(w)

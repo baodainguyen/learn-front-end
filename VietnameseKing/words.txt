@@ -13302,7 +13302,7 @@
 {"hành văn"}
 {"hành vân"}
 {"hành vi"}
-{"hành xác"}
+{"hành xác"}{"xác ướp"}{"ướp xác"}
 {"hào"}
 {"hảo"}
 {"hao"}
@@ -20444,7 +20444,7 @@
 {"mưa nắng"}
 {"mưa ngâu"}
 {"mưa phùn"}
-{"mưa rào"}
+{"mưa rào"}{"cơn mưa rào"}
 {"mưa rươi"}
 {"mưa thuận gió hoà"}
 {"mưa tuyết"}
@@ -28403,7 +28403,7 @@
 {"tận dụng"}
 {"tân dược"}
 {"tân gia"}
-{"tân hôn"}
+{"tân hôn"}{"đêm tân hôn"}
 {"tận hưởng"}
 {"tân khoa"}
 {"tân khổ"}
@@ -32863,7 +32863,7 @@
 {"trợ vốn"}
 {"trời"}
 {"trời bể"}
-{"trời biển"}
+{"trời biển"}{"trời yên biển lặng"}
 {"trời có mắt"}
 {"trời đánh"}
 {"trời đánh không chết"}

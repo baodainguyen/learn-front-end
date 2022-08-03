@@ -7,6 +7,10 @@ text = 'i/ặ/c/g/á/c/i'
 #text = 'c/ồ/n/l/ặ/c/p/m/g/ơ'
 #text = 'a/d/i/đ/à/p/h/ậ/t'
 text = 'x/ớ/c/ư/p/á'
+text = str(input())     # python 3.xx (read text from cmd)
+# python3.10 main.py
+# c/h/ồ/g/t/u/i/ệ/n/n   (input cmd)
+# cuồng nhiệt           (output)
 
 def findVNCharWithRegex(w):
     rr = []

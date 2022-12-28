@@ -33,11 +33,11 @@
                 <div>
                   <div class="d-flex justify-content-between">
                     <h4>Advanced Search</h4>
-                    <h4 class="fas fa-ellipsis-h"></h4>
+                    <h4 class="fas fa-ellipsis-h d-none"></h4>
                   </div>
                   <div class="mb-3">
                     <div class="input-group">
-                      <input class="form-control bg-light rounded border-0" type="text" placeholder="pendding..."/>
+                      <input class="form-control bg-light rounded border-0" type="text" placeholder="looking for..."/>
                       <div class="input-group-append">
                         <button class="btn btn-primary rounded font-weight-bold pr-3 pl-3 ml-2" type="submit">Find</button>
                       </div>
@@ -48,9 +48,9 @@
             </div>
           </div>
         </div>
-        <div class="row mt-1 mt-n9" id="dnb-body">
-          <div class="dnb-per-1-4 col-xl-2 col-lg-3 col-md-4 col-12 col-wrap mt-5">
-            <div class="dnb-mobile-sticky">
+        <div class="row mt-1" id="dnb-body">
+          <div class="dnb-per-1-4 col-xl-2 col-lg-3 col-md-4 col-12 col-wrap mt-n6">
+            <div class="dnb-mobile-sticky dnb-maxwidth768">
               <nav class="navbar bg-light navbar-light rounded-lg pt-4 pb-4 mt-4 mb-4 minw200">
                 <ul class="navbar-nav">
                   <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/optimize.www">
@@ -99,19 +99,28 @@
               </div>
             </div>
           </div>
-          <div class="dnb-per-3-4 col-xl-10 col-lg-9 col-md-8 col-12 col-wrap mt-n5">
+          <div class="dnb-per-3-4 col-xl-10 col-lg-9 col-md-8 col-12 col-wrap mt-n2">
             <div class="row">
-              <div class="dnb-per-1-2 col-xl-8 col-lg-8 col-md-12 col-wrap">
+              <div class="dnb-per-1-2 col-xl-8 col-lg-8 col-md-12 col-wrap mt-n10">
                 <div class="mb-4 mt-5">
-                  <div>
+                  <div class="dnb-maxwidth992">
                     <div class="d-flex justify-content-between">
                       <h4>Favorite Now</h4>
-                      <h4 class="fas fa-ellipsis-h"></h4>
+                      <h4 class="fas fa-ellipsis-h d-none"></h4>
                     </div>
                     <div class="mb-3">
-                        <img class="rounded-lg m-2 box46px img-cover" src="stylescript/assets/vuejs.jpg" />
-                        <img class="rounded-lg m-2 box46px img-cover" src="stylescript/assets/sass.jpg" />
-                        <img class="rounded-lg m-2 box46px img-cover" src="stylescript/assets/graphql.png" />
+                        <a class="d-inline-block rounded-lg m-2 box46px bg-cover-norepeat" 
+                        style="background-image: url(stylescript/assets/vuejs.jpg);"
+                         target="_blank" href="https://front-end-2021.github.io/cv/">
+                        </a>
+                        <a class="rounded-lg m-2 box46px bg-img-ui bg-sass bg-cover-norepeat" 
+                        style="display: inline-block;"
+                         href="#">
+                        </a>
+                        <a class="rounded-lg m-2 box46px img-cover bg-cover-norepeat" 
+                        style="display: inline-block; background-image: url(stylescript/assets/graphql.png);"
+                         target="_blank" href="https://github.com/baodainguyen/graphQL">
+                        </a>
                     </div>
                   </div>
                   <div>
@@ -129,7 +138,7 @@
                                       <div class="d-flex flex-column flex-grow-1 text-dark" >
                                         <div class="d-flex justify-content-between">
                                             <a target="_blank"
-                                            href="https://baodainguyen.github.io/demo05/">
+                                            href="htmlcssjs/demo05/index.html">
                                                 <h4 class="card-text mb-0 text-dark">Ui/Ux Design</h4>
                                             </a>
                                           <h6 class="align-self-end pt-2">187 mins</h6>
@@ -174,7 +183,7 @@
                       </div>
                       <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
                         <a class="card rounded-lg box-h99 bg-img-ui bg-coach" target="_blank"
-                            href="htmlcssjs/demo05/index.html">
+                            href="https://github.com/baodainguyen/learn-front-end/tree/main/htmlcssjs/demo05">
                           <div class="card-body text-center p-2">
                             <p class="card-text text-dark">Demo05 - Pro Coaching</p>
                           </div>
@@ -217,17 +226,17 @@
                       </div>
                       <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
                         <a class="card rounded-lg box-h99 bg-img-ui bg-docker" target="_blank"
-                            href="https://github.com/baodainguyen/learn-back-end/tree/master/python">
+                            href="https://github.com/front-end-2021/docker/tree/master/nodejsapi">
                           <div class="card-body text-center p-2">
-                            <p class="card-text text-dark">Learn microservices with Python</p>
+                            <p class="card-text text-dark">Learn nodejs with Docker</p>
                           </div>
                         </a>
                       </div>
                       <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <a class="card rounded-lg box-h99 bg-img-ui bg-vuejs" target="_blank"
-                            href="vuejs/index.html">
+                        <a class="card rounded-lg box-h99 bg-img-ui python-microservice" target="_blank"
+                            href="https://github.com/baodainguyen/learn-back-end/tree/master/python">
                           <div class="card-body text-center p-2">
-                            <p class="card-text text-white">Lear front-end Vuejs basic</p>
+                            <p class="card-text text-white">Learn microservice with Python</p>
                           </div>
                         </a>
                       </div>
@@ -235,7 +244,7 @@
                   </div>
                 </div>
               </div>
-              <div class="dnb-per-1-3 col-xl-4 col-lg-4 col-md-12 col-wrap mt-9">
+              <div class="dnb-per-1-3 col-xl-4 col-lg-4 col-md-12 col-wrap mt-1">
                 <div class="mt-5">
                   <div class="mt-n1">
                     <h2>Category</h2>
@@ -264,11 +273,12 @@
                           <p class="card-text text-white">What's news</p>
                         </div>
                       </div>
-                      <div class="card rounded-lg box-h198 bg-img-ui bg-sass">
+                      <a class="card rounded-lg box-h198 bg-img-ui bg-vuejs" target="_blank"
+                        href="vuejs/index.html">
                         <div class="card-body text-center">
-                          <p class="card-text text-white">What's SaSS</p>
+                          <p class="card-text text-white">Vuejs demo</p>
                         </div>
-                      </div>
+                      </a>
                     </div>
                   </div>
                   <div class="mb-3">

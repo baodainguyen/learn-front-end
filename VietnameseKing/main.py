@@ -6,6 +6,7 @@ text = 'i/ặ/c/g/á/c/i'
 #text = 'c/c/h/ị/h/t/ủ'
 #text = 'c/ồ/n/l/ặ/c/p/m/g/ơ'
 #text = 'a/d/i/đ/à/p/h/ậ/t'
+text = 'n/g/o/n/ă/n/t/r'
 text = 'x/ớ/c/ư/p/á'
 text = str(input())     # python 3.xx (read text from cmd)
 # python3.10 main.py

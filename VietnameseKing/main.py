@@ -6,7 +6,7 @@ text = 'i/ặ/c/g/á/c/i'
 #text = 'c/c/h/ị/h/t/ủ'
 #text = 'c/ồ/n/l/ặ/c/p/m/g/ơ'
 #text = 'a/d/i/đ/à/p/h/ậ/t'
-text = 'x/ớ/c/ư/p/á'
+text = 'n/g/o/n/ă/n/t/r'
 
 def findVNCharWithRegex(w):
     rr = []

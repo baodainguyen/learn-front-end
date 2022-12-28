@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>demo08</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+    <div id="dnbApp">
+        <example></example>
+    </div>
+    
+    <template id="example">
+        <div>
+            <div v-for="(p, pIdx) in ParentRegion">
+                <div>{{p.Name}}</div>
+                <div v-for="(chl, cIdx) in p.ChildStakeHolders">
+                <strong>{{cIdx}}</strong>
+                    <div>{{chl.Name}}</div>
+                    <div v-for="ct in chl.Categories">
+                        <div>{{ct.Name}}</div>
+                        <div v-for="arr in ct.Elements">
+                            <div v-for="e in arr">
+                                <span>{{e.Start}}</span>
+                                <strong>{{e.End}}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+  
+  
+    <script>
+        Vue.component('example', {
+            template: "#example",
+            computed: { 
+                ParentRegion() {
+                    return this.$root.ElementMultiLines;
+                }
+            },
+            methods: { }
+            }
+        );
+    </script>
+    <script src="data_code.js"></script>
+    <script src="dainb_common.js"></script>
+    <script src="dainb_app.js"></script>
+</body>
+</html>
